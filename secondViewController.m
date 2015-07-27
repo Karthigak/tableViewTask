@@ -1,0 +1,76 @@
+//
+//  secondViewController.m
+//  tableViewTask
+//
+//  Created by OBS_Macmini on 7/25/15.
+//  Copyright (c) 2015 OptisolBusinessSolutions. All rights reserved.
+//
+
+#import "secondViewController.h"
+
+@interface secondViewController ()<UITextFieldDelegate>
+
+@end
+
+@implementation secondViewController
+@synthesize textdata;
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    
+        // Do any additional setup after loading the view.
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    textdata.text=_temp;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+
+
+
+- (IBAction)plusPress:(id)sender
+{
+    self.value=self.value+1;
+    if(self.value<[self.arrayvalue count])
+    {
+        textdata.text=[self.arrayvalue objectAtIndex:self.value];
+    }
+    else
+    {    self.value=self.value-1;
+
+        textdata.text=[self.arrayvalue objectAtIndex:self.value];
+    }
+}
+- (IBAction)minusPress:(id)sender
+{
+    self.value=self.value-1;
+    if(self.value<[self.arrayvalue count])
+    {
+        textdata.text=[self.arrayvalue objectAtIndex:self.value];
+    }
+    else
+    {
+        self.value=self.value+1;
+        textdata.text=[self.arrayvalue objectAtIndex:self.value];
+    }
+
+}
+@end

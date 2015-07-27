@@ -14,6 +14,7 @@
 		40E0E84E1B6360FA00DA44AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E0E84D1B6360FA00DA44AA /* Images.xcassets */; };
 		40E0E8511B6360FA00DA44AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E0E84F1B6360FA00DA44AA /* LaunchScreen.xib */; };
 		40E0E85D1B6360FA00DA44AA /* tableViewTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E0E85C1B6360FA00DA44AA /* tableViewTaskTests.m */; };
+		40E0E8681B63655800DA44AA /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E0E8671B63655800DA44AA /* secondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		40E0E8561B6360FA00DA44AA /* tableViewTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableViewTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E0E85B1B6360FA00DA44AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E0E85C1B6360FA00DA44AA /* tableViewTaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableViewTaskTests.m; sourceTree = "<group>"; };
+		40E0E8661B63655800DA44AA /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
+		40E0E8671B63655800DA44AA /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		40E0E8341B6360FA00DA44AA = {
 			isa = PBXGroup;
 			children = (
+				40E0E8661B63655800DA44AA /* secondViewController.h */,
+				40E0E8671B63655800DA44AA /* secondViewController.m */,
 				40E0E83F1B6360FA00DA44AA /* tableViewTask */,
 				40E0E8591B6360FA00DA44AA /* tableViewTaskTests */,
 				40E0E83E1B6360FA00DA44AA /* Products */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E0E8681B63655800DA44AA /* secondViewController.m in Sources */,
 				40E0E8491B6360FA00DA44AA /* ViewController.m in Sources */,
 				40E0E8461B6360FA00DA44AA /* AppDelegate.m in Sources */,
 				40E0E8431B6360FA00DA44AA /* main.m in Sources */,
